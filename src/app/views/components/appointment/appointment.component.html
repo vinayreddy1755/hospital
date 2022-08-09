@@ -1,0 +1,19 @@
+
+<div class="row" style="margin: 1%;">
+  <div class="col" style="text-align: right;">
+    <button class="actionBtn" routerLink = "/request">Add appointmnet</button>
+  </div>
+</div>
+
+<ng-template [ngIf] = "appointments.length == 0">
+  <div class="loading-container-simulation" >
+      <p class="loading-text">
+        <ng-template [ngIf] = "loading" [ngIfElse] = "loaded">
+          Loading Appointments...
+        </ng-template>
+        <ng-template #loaded>
+          Please click on add for an Appointment...
+        </ng-template>
+      </p>
+  </div>
+</ng-template>

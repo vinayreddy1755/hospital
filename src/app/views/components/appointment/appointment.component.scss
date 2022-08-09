@@ -1,0 +1,29 @@
+@import '../../../../styles/_variables.scss';
+
+.loading-container-simulation{
+    height: 350px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+    color: white;
+}
+
+.loading-text {
+    font-size: x-large; color: white;
+}
+
+.actionBtn {
+    border: 1px solid black;
+    background: white;
+    color: black;
+    font: $button-font;
+    padding: 5px 10px;
+}
+  
+.actionBtn:hover {
+    background: $primary-color;
+    color: white;
+    cursor: pointer;
+}
